@@ -35,16 +35,15 @@ class MainTest{
 				commandcode= Integer.parseInt(command);
 			}
 			
-			//executing commands
 			if(commandcode==1)
-				ob.enqueue(element);
+				ob.put(element);
 			else if(commandcode==2)
-				ob.dequeue();
+				ob.pop();
 			else if(commandcode==3)
-				ob.print();
+				ob.peek();
 			else
 				System.out.println("Invalid command code!!");
-
+			
 		}while(loopcounter!=commandcount);
 
 	}
