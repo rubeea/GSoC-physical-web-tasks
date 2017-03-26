@@ -4,7 +4,7 @@ class MedianTest{
 	
 	static int commandcount=0,loopcounter=0,element=0;
 
-	public static void main(String[] args){
+	public static void main(String args[]){
 
 		Scanner scan=new Scanner(System.in);
 		commandcount= scan.nextInt();
