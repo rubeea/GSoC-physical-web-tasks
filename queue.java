@@ -16,7 +16,7 @@ public class queue{
 		
 	}
 
-	public void enqueue(int element){
+	public void put(int element){
 		
 		if(itemList.isEmpty()) //first run
 			head=0;
@@ -29,7 +29,7 @@ public class queue{
 		
 	}
 
-	public void dequeue(){
+	public void pop(){
 
 		if(!itemList.isEmpty()){
 			itemList.remove(head);
@@ -49,7 +49,7 @@ public class queue{
 		}
 	}
 
-	public void print(){
+	public void peek(){
 		System.out.println(""+itemList.get(head));
 	}
 
